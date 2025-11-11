@@ -5,8 +5,13 @@
 //  Created by Stepan Degtsiaryk on 5.11.25.
 //
 
-import Foundation
+import SwiftUI
+internal import Combine
 
 enum RootScreen{
-    
+    case main, nightlight
+}
+
+final class AppState: ObservableObject {
+    @Published var root: RootScreen = .main
 }

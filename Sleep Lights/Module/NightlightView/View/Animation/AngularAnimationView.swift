@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct AngularAnimationView: View {
+    
+    var colors: [Color]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TimelineView(.animation){ timeline in
+                    let t = timeline.date.timeIntervalSinceReferenceDate
+                    let offset = sin(t / 2) * 0.5 + 0.5
+        
+                    LinearGradient(
+                               colors: colors,
+                               startPoint: UnitPoint(x: offset, y: 0),
+                               endPoint: UnitPoint(x: 1 - offset, y: 1))
+                           .ignoresSafeArea()
+                }
     }
 }
 
 #Preview {
-    AngularAnimationView()
+    let colors: [Color] = [.red, .blue, .yellow]
+    AngularAnimationView(colors: colors)
 }

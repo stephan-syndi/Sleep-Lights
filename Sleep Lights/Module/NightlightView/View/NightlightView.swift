@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct NightlightView: View {
-    
-    @State private var vm: NightlightViewModel = NightlightViewModel()
+    @EnvironmentObject var theme: ThemeManager
+    @EnvironmentObject private var settingsManager: SettingsManager
+    @StateObject private var vm: NightlightViewModel
     
     @State private var brightness: Double = 0.0
     @State private var lastDragValue: CGFloat = 0
@@ -17,21 +18,20 @@ struct NightlightView: View {
     @State private var showTimerSettings = false
     @State private var showHud = true
     
+    init(manager: TimeManager = .shared, breath: BreathModel){
+        _vm = StateObject(wrappedValue: NightlightViewModel(manager: manager, breath: breath))
+    }
+    
     var body: some View {
         ZStack{
-            NightlightAnimationView()
+            theme.backgroundGradient
+                .ignoresSafeArea()
+            
+            HudNightlightView(showTimerSettings: $showTimerSettings, vm: vm)
+                .visibility(showHud ? .visible : .invisible)
+            
             VStack{
-                
-                if showHud {
-                    HudNightlightView(showTimerSettings: $showTimerSettings)
-                    Spacer()
-                }
-                
-                BreathElementView(vm: $vm)
-                    
-                if showHud {
-                    Spacer()
-                }
+                BreathElementView(vm: vm)
             }
         }
         .gesture(
@@ -49,7 +49,10 @@ struct NightlightView: View {
         )
         .brightness(brightness)
         .sheet(isPresented: $showTimerSettings){
-            TimerSettingsView()
+            TimerSettingsView(duration: TimeInterval(settingsManager.settings.defaultTimerSeconds))
+                .onAppear{
+                    print("def \(settingsManager.settings.defaultTimerSeconds)")
+                }
         }
         .onAppear{
             UIApplication.shared.isIdleTimerDisabled = true
@@ -60,9 +63,15 @@ struct NightlightView: View {
         .onLongPressGesture(minimumDuration: 1.0){
             showHud.toggle()
         }
+        .onTapGesture(count: 2){
+            vm.onToggle()
+        }
     }
 }
 
 #Preview {
-    NightlightView()
+    NightlightView(breath: BreathModel())
+        .environmentObject(ThemeManager(store: PresetStore()))
+        .environmentObject(SettingsManager())
+        .environmentObject(PresetStore())
 }

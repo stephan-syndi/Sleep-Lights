@@ -9,41 +9,65 @@ import SwiftUI
 internal import Combine
 
 struct BreathView: View {
-    @State private var viewModel: BreathViewModel = BreathViewModel()
+    @EnvironmentObject var themeManager: ThemeManager
+    @StateObject private var viewModel: BreathViewModel
     
+    init(model: BreathModel){
+        _viewModel = StateObject(wrappedValue: BreathViewModel(model: model))
+    }
     
     var body: some View {
-        Form{
+        ZStack{
+            themeManager.backgroundGradient.ignoresSafeArea()
+            
+            Form{
                 Picker("Breath", selection: $viewModel.currentTheme){
                     ForEach(viewModel.model.theme, id: \.self){ preset in
                         Text(preset)
                     }
                 }
-            
-            Section("Presets"){
-                
-                CustomizeItemView(value: $viewModel.inhaleValue)
-                CustomizeItemView(value: $viewModel.inhaleHold)
-                CustomizeItemView(value: $viewModel.exhaleValue)
-                CustomizeItemView(value: $viewModel.exhaleHold)
+                .listRowBackground(Color.white.opacity(0.1))
                 
                 
-                HStack(spacing: 16){
-                    Spacer()
-                    Button("Apply")
-                    {
-                            
-                    }
-                    .buttonStyle(.borderedProminent)
+                Section("Presets"){
+                    
+                    CustomizeItemView(value: $viewModel.inhaleValue)
+                    CustomizeItemView(value: $viewModel.inhaleHold)
+                    CustomizeItemView(value: $viewModel.exhaleValue)
+                    CustomizeItemView(value: $viewModel.exhaleHold)
+                    
+                    
+                    HStack(spacing: 16){
+                        Spacer()
+                        Button()
+                        {
+                            viewModel.applyCustomPreset()
+                        } label: {
+                            Text("Apply")
+                                .foregroundColor(.white)
+                        }
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 17)
+                        .background(.green)
+                        .clipShape(Capsule())
                         
-                    Button("Cancel")
-                    {
-                            
+                        Button()
+                        {
+                            viewModel.resetPreset()
+                        } label: {
+                            Text("Reset")
+                                .foregroundColor(.white)
+                        }
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 17)
+                        .background(.red)
+                        .clipShape(Capsule())
                     }
-                    .buttonStyle(.bordered)
                 }
-            }.disabled(viewModel.currentTheme != viewModel.model.theme[3])
-            
+                .listRowBackground(Color.white.opacity(0.1))
+                .disabled(viewModel.currentTheme != viewModel.model.theme[3])
+            }
+            .modifier(ContainerHiddenBackground())
         }
         
         
@@ -51,5 +75,6 @@ struct BreathView: View {
 }
 
 #Preview {
-    BreathView()
+    BreathView(model: BreathModel())
+        .environmentObject(ThemeManager(store: PresetStore()))
 }

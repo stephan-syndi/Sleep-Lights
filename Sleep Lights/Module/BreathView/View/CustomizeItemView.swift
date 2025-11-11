@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomizeItemView: View {
-    @Binding var value: Float
+    @Binding var value: Double
     
     var body: some View {
         Slider(value: $value, in: 0...10, step: 1){

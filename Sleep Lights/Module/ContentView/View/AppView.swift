@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AppView: View {
     @State var selectTab = "Home"
-    
+    @EnvironmentObject var breath: BreathModel
+    @EnvironmentObject var presetStore: PresetStore
     let tabs = ["Home", "Presets", "Breath", "Settings"]
     
     init() {
@@ -22,9 +23,9 @@ struct AppView: View {
             TabView(selection: $selectTab){
                 HomeView()
                     .tag("Home")
-                NightlightView()
+                PresetListView(presetStore)
                     .tag("Presets")
-                BreathView()
+                BreathView(model: breath)
                     .tag("Breath")
                 SettingsView()
                     .tag("Settings")
@@ -40,9 +41,10 @@ struct AppView: View {
             .padding(.top, 20)
             .padding(.bottom, 5)
             .frame(maxWidth: .infinity)
-            .background(Color("MainBG").opacity(0.5))
+            .background(Color("MainBG").opacity(0.1))
         }
     }
+        
 }
 
 struct TabBarItem : View{
@@ -58,17 +60,18 @@ struct TabBarItem : View{
                     }
                 }label: {
                     HStack{
-                        Image(tab)
+                        Image(systemName: getImageName(tab))
+                            .foregroundColor(selected == tab ?  .gray : .gray.opacity(0.5))
                             .frame(width: 20, height: 20)
-                            .colorInvert()
-                        }
+                        
                     }
                 }
-                .opacity(selected == tab ? 1 : 0.7)
-                .padding(.vertical, 10)
-                .padding(.horizontal, 17)
-                .background(selected == tab ? .white : Color("MainBG"))
-                .clipShape(Capsule())
+            }
+            .opacity(selected == tab ? 1 : 0.7)
+            .padding(.vertical, 10)
+            .padding(.horizontal, 17)
+            .background(selected == tab ? .white.opacity(0.5) : Color("MainBG").opacity(0.5))
+            .clipShape(Capsule())
         } else {
             ZStack{
                 
@@ -78,9 +81,10 @@ struct TabBarItem : View{
                     }
                 }label: {
                     HStack{
-                        Image(tab)
+                        Image(systemName: getImageName(tab))
+                            .foregroundColor(selected == tab ?  .gray : .gray.opacity(0.5))
                             .frame(width: 20, height: 20)
-                            .colorInvert()
+                        
                         if(selected == tab){
                             Text(tab)
                                 .font(.system(size: 14))
@@ -91,12 +95,34 @@ struct TabBarItem : View{
                 .opacity(selected == tab ? 1 : 0.7)
                 .padding(.vertical, 10)
                 .padding(.horizontal, 17)
-                .background(selected == tab ? .white : Color("MainBG"))
+                .background(selected == tab ? .white.opacity(0.4) : Color("MainBG").opacity(0.2))
                 .clipShape(Capsule())
             }
         }
-    }}
+    }
+
+    private func getImageName(_ tab: String) -> String {
+        switch tab {
+        case "Home":
+            "house.fill"
+        case "Presets":
+            "paintbrush.fill"
+        case "Breath":
+            "lungs.fill"
+        case "Settings":
+            "gearshape.fill"
+        default:
+            "exclamationmark.triangle.fill"
+        }
+    }
+}
 
 #Preview {
+    let preset = PresetStore()
     AppView()
+        .environmentObject(preset)
+        .environmentObject(ThemeManager(store: preset))
+        .environmentObject(BreathModel())
+        .environmentObject(AppState())
+        .environmentObject(SettingsManager())
 }

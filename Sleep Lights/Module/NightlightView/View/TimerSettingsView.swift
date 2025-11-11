@@ -9,24 +9,46 @@ import SwiftUI
 
 struct TimerSettingsView: View {
     @Environment(\.dismiss) private var dismiss
-    @State var selectedTime = Date()
+    @EnvironmentObject private var themeManager: ThemeManager
+   
+    
+    @State private var duration: TimeInterval
+    
+    private let manager: TimeManager
+    
+    init(manager: TimeManager = .shared, duration: TimeInterval = 60){
+        self.manager = manager
+        self.duration = duration
+    }
     
     var body: some View {
         ZStack{
-            NightlightAnimationView()
-            
+            themeManager.backgroundGradient.ignoresSafeArea()
             
             VStack{
-                Text("Timer Settings")
+                Text("Timer")
                     .font(.title)
                 
-                DatePicker(
-                    "Time",
-                    selection: $selectedTime,
-                    displayedComponents: [.hourAndMinute]
-                )
-                .datePickerStyle(.wheel)
-                .labelsHidden()
+            
+                TimeIntervalPicker(totalSeconds: $duration)
+                    
+                HStack(spacing: 26){
+                    Button{
+                        manager.setRemaining(duration)
+                        dismiss()
+                        
+                    }label: {
+                        Text("Set")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    
+                    Button{
+                        duration = manager.model.lastRemaining
+                    }label: {
+                        Text("Reset")
+                    }
+                    .buttonStyle(.bordered)
+                }
             }
         }
     }
@@ -34,4 +56,6 @@ struct TimerSettingsView: View {
 
 #Preview {
     TimerSettingsView()
+        .environmentObject(ThemeManager(store: PresetStore()))
+        .environmentObject(SettingsManager())
 }

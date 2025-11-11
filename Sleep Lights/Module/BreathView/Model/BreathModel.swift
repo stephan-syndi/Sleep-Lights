@@ -6,9 +6,12 @@
 //
 
 import Foundation
+internal import Combine
 
-class BreathModel{
-    var theme: [String] = ["Box", "4-7-8", "Coherent", "Custom"]
+final class BreathModel : ObservableObject {
+    @Published var currentPreset: Preset
+    
+    let theme: [String] = ["Box", "4-7-8", "Coherent", "Custom"]
     
     var preset: [Preset] =
     [
@@ -17,13 +20,33 @@ class BreathModel{
         Preset(name: "Coherent", inhaleValue: 5, inhaleHold: 0.1, exhaleValue: 5, exhaleHold: 0.1),
         Preset(name: "Custom", inhaleValue: 1, inhaleHold: 1, exhaleValue: 1, exhaleHold: 1)
     ]
+    
+    init(){
+        self.currentPreset = preset.first(where: {$0.name == "Box"}) ??  Preset(name: "Box", inhaleValue: 4, inhaleHold: 1.5, exhaleValue: 4, exhaleHold: 1.5)
+    }
+    
+    func update(_ transform: Preset){
+        preset[3] = transform
+    }
+    
+    func getStrategy() -> NightlightModel.Strategy? {
+        
+        let strategy = NightlightModel.Strategy(inhaleDuration: currentPreset.inhaleValue,
+                                         inhaleHoldDuration: currentPreset.inhaleHold,
+                                         exhaleDuration: currentPreset.exhaleValue,
+                                         exhaleHoldDuration: currentPreset.exhaleHold)
+        
+        return strategy
+    }
+    
+    struct Preset {
+        let name: String
+        
+        var inhaleValue: Double
+        var inhaleHold: Double
+        var exhaleValue: Double
+        var exhaleHold: Double
+    }
 }
 
-struct Preset {
-    let name: String
-    
-    let inhaleValue: Float
-    let inhaleHold: Float
-    let exhaleValue: Float
-    let exhaleHold: Float
-}
+

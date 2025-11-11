@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct LinearAnimationView: View {
+    var colors: [Color]
+    
+    @State private var animate = false
+    
+    @State private var start = UnitPoint.topLeading
+    @State private var end = UnitPoint.bottomTrailing
+    @State private var isOn = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        LinearGradient(
+            colors: isOn ? colors : colors.reversed(),
+            startPoint: .top,
+            endPoint: .bottom)
+        .ignoresSafeArea()
+        .animation(.easeInOut(duration: 3).repeatForever(autoreverses: true), value: isOn)
+        .onAppear {
+            isOn.toggle()
+        }
     }
 }
 
 #Preview {
-    LinearAnimationView()
+    let colors: [Color] = [.red, .blue, .yellow]
+    LinearAnimationView(colors: colors)
 }

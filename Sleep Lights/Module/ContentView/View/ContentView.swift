@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var settingsManager: SettingsManager
+    @EnvironmentObject var breath: BreathModel
+    
     var body: some View {
-        AppView()
+        switch appState.root {
+        case .main:
+            AppView()
+                .preferredColorScheme(settingsManager.settings.theme == .darkOnly ? .dark : nil)
+        case .nightlight:
+            NightlightView(breath: breath)
+        }
     }
 }
 

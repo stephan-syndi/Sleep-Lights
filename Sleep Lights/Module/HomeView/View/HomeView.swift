@@ -6,45 +6,87 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct HomeView: View {
+    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var themeManager: ThemeManager
+    @EnvironmentObject private var settingsManager: SettingsManager
+    @State private var isShowPopup: Bool = false
+    
+    @State var showTimerSettings: Bool = false
+    @State var showPopup = false
+    @State var isActive = false
+    
     var body: some View {
-        VStack(spacing: 16){
-            Text("Welcome Home")
-                .font(.largeTitle)
+        ZStack{
+            //            NightlightAnimationView()
+            themeManager.backgroundGradient.ignoresSafeArea()
             VStack{
-                Button("Start Nightlight"){
+                Image(.logo)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .listRowBackground(Color.clear)
+                Spacer()
+                
+                HStack(alignment: .center, spacing: 16){
+                    VStack{
+                        Button()
+                        {
+                            withAnimation{
+                                appState.root = .nightlight
+                            }
+                        } label: {
+                            Image(systemName: "play.fill")
+                                .font(.title)
+                                .imageScale(.large)
+                                .padding(.horizontal, 12)
+                        }
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.green)
+                        .clipShape(Capsule()
+                        )
+                        
+                    }
                     
                 }
-                .buttonStyle(.borderedProminent)
+                .listRowBackground(Color.clear)
                 
-                
-                
-                 Button("Timer"){
-                    
+                HStack(alignment: .center, spacing: 16){
+                    Button()
+                    {
+                        isShowPopup = true
+                    }label: {
+                        Image(systemName: "hourglass")
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .imageScale(.large)
+                    }
+                    .padding()
+                    .foregroundColor(.black)
+                    .fixedSize(horizontal: true, vertical: true)
+                    .background(Color.green.opacity(0.5))
+                    .clipShape(Circle())
+
                 }
-                .buttonStyle(.borderedProminent)
+                .listRowBackground(Color.clear)
                 
-                 Button("Choose Theme"){
-                    
-                }
-                .buttonStyle(.borderedProminent)
-                 Button("Quick Presets"){
-                    
-                }
-                .buttonStyle(.borderedProminent)
                 
-                Button("Last Presets"){
-                    
-                }
-                .buttonStyle(.borderedProminent)
-            
+                Spacer()
+                
             }
-            
+            .padding()
+            .sheet(isPresented: $isShowPopup){
+                TimerSettingsView(duration: TimeInterval(settingsManager.settings.defaultTimerSeconds))
+            }
         }
     }
 }
 
 #Preview {
     HomeView()
+        .environmentObject(ThemeManager(store: PresetStore()))
+        .environmentObject(AppState())
+        .environmentObject(SettingsManager())
 }
