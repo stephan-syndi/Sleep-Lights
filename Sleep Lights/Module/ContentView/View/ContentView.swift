@@ -24,5 +24,11 @@ struct ContentView: View {
 }
 
 #Preview {
+    let presetStore = PresetStore()
     ContentView()
+        .environmentObject(AppState())
+        .environmentObject(SettingsManager())
+        .environmentObject(BreathModel())
+        .environmentObject(presetStore)
+        .environmentObject(ThemeManager(store: presetStore))
 }
