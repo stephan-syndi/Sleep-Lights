@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		4100BB3A2F432BFB00B2748A /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100BB392F432BFB00B2748A /* FirebaseCore.framework */; };
 		4100BB3E2F432C0000B2748A /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100BB3D2F432C0000B2748A /* FirebaseMessaging.framework */; };
-		4100BC1F2F43364900B2748A /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100BC1E2F43364900B2748A /* FirebaseCore.framework */; };
-		4100BC232F43364F00B2748A /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100BC222F43364F00B2748A /* FirebaseMessaging.framework */; };
-		4100BC252F43365500B2748A /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100BB402F432C0C00B2748A /* AppsFlyerLib.xcframework */; };
 		41806DBA2F432A1900075CC3 /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 41806DB32F432A1900075CC3 /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		97ABC7D0D7DA9AED2ABE1A4A /* Pods_SleepLights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FAFAD6562FD1CB41E5DA9C /* Pods_SleepLights.framework */; };
 		ABB4A94CACEEB67EF2183828 /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2C94BAE726E0D37F35A2D5 /* Pods_notifications.framework */; };
@@ -80,8 +77,6 @@
 		};
 		41E41FB12EB1A83300D7C75E /* Sleep Lights */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "Sleep Lights";
 			sourceTree = "<group>";
 		};
@@ -102,9 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4100BC252F43365500B2748A /* AppsFlyerLib.xcframework in Frameworks */,
-				4100BC232F43364F00B2748A /* FirebaseMessaging.framework in Frameworks */,
-				4100BC1F2F43364900B2748A /* FirebaseCore.framework in Frameworks */,
 				97ABC7D0D7DA9AED2ABE1A4A /* Pods_SleepLights.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,9 +307,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SleepLights/Pods-SleepLights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SleepLights/Pods-SleepLights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
