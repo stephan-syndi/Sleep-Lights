@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41E41FAE2EB1A83300D7C75E"
-               BuildableName = "Sleep Lights.app"
-               BlueprintName = "Sleep Lights"
-               ReferencedContainer = "container:Sleep Lights.xcodeproj">
+               BuildableName = "SleepLights.app"
+               BlueprintName = "SleepLights"
+               ReferencedContainer = "container:SleepLights.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41E41FAE2EB1A83300D7C75E"
-            BuildableName = "Sleep Lights.app"
-            BlueprintName = "Sleep Lights"
-            ReferencedContainer = "container:Sleep Lights.xcodeproj">
+            BuildableName = "SleepLights.app"
+            BlueprintName = "SleepLights"
+            ReferencedContainer = "container:SleepLights.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41E41FAE2EB1A83300D7C75E"
-            BuildableName = "Sleep Lights.app"
-            BlueprintName = "Sleep Lights"
-            ReferencedContainer = "container:Sleep Lights.xcodeproj">
+            BuildableName = "SleepLights.app"
+            BlueprintName = "SleepLights"
+            ReferencedContainer = "container:SleepLights.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
