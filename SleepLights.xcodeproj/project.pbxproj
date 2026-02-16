@@ -205,9 +205,9 @@
 				41E41FAB2EB1A83300D7C75E /* Sources */,
 				41E41FAC2EB1A83300D7C75E /* Frameworks */,
 				41E41FAD2EB1A83300D7C75E /* Resources */,
+				411E7EE32F434452006EB692 /* Embed Frameworks */,
 				B83EE4DA1A4B8E7046864958 /* [CP] Embed Pods Frameworks */,
 				41806DBF2F432A1900075CC3 /* Embed Foundation Extensions */,
-				411E7EE32F434452006EB692 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
