@@ -34,11 +34,18 @@ post_install do |installer|
     target.build_configurations.each do |config|
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-      
-      # Фикс для AppsFlyerFramework копирования XCFrameworks
       config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
       config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
       config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+    end
+    
+    # Удаление проблемного скрипта Copy XCFrameworks
+    if target.name == 'AppsFlyerFramework'
+      target.shell_script_build_phases.each do |phase|
+        if phase.name&.include?('Copy XCFrameworks') || phase.shell_script&.include?('copy-xcframeworks.sh')
+          target.shell_script_build_phases.delete(phase)
+        end
+      end
     end
   end
 end
