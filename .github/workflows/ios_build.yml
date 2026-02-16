@@ -51,24 +51,6 @@ jobs:
           find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
           echo "::endgroup::"
 
-      - name: Install CocoaPods dependencies
-        run: |
-          sudo gem install cocoapods
-          pod deintegrate || true
-          rm -rf Pods Podfile.lock
-          pod install --repo-update --verbose
-
-      - name: Build Pods for Archive
-        run: |
-          xcodebuild build \
-            -workspace "Sleep Lights.xcworkspace" \
-            -scheme "Sleep Lights" \
-            -configuration Release \
-            -sdk iphoneos \
-            -destination 'generic/platform=iOS' \
-            BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
-            ONLY_ACTIVE_ARCH=NO
-
       - name: Build (нативный через Fastlane)
         env:
           # App Store Connect
