@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4100BB3A2F432BFB00B2748A /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100BB392F432BFB00B2748A /* FirebaseCore.framework */; };
 		4100BB3E2F432C0000B2748A /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100BB3D2F432C0000B2748A /* FirebaseMessaging.framework */; };
+		411E7EDD2F4341B8006EB692 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E7EDC2F4341B8006EB692 /* UserNotifications.framework */; };
+		411E7EDE2F4341BD006EB692 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E7EDC2F4341B8006EB692 /* UserNotifications.framework */; };
 		41806DBA2F432A1900075CC3 /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 41806DB32F432A1900075CC3 /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		97ABC7D0D7DA9AED2ABE1A4A /* Pods_SleepLights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FAFAD6562FD1CB41E5DA9C /* Pods_SleepLights.framework */; };
 		ABB4A94CACEEB67EF2183828 /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2C94BAE726E0D37F35A2D5 /* Pods_notifications.framework */; };
@@ -47,6 +49,7 @@
 		4100BB472F432C1900B2748A /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4100BC1E2F43364900B2748A /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4100BC222F43364F00B2748A /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		411E7EDC2F4341B8006EB692 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		41806DB32F432A1900075CC3 /* notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E41FAF2EB1A83300D7C75E /* SleepLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		512F7879942BAFD3FEEBC6EA /* Pods-notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.release.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411E7EDE2F4341BD006EB692 /* UserNotifications.framework in Frameworks */,
 				4100BB3E2F432C0000B2748A /* FirebaseMessaging.framework in Frameworks */,
 				4100BB3A2F432BFB00B2748A /* FirebaseCore.framework in Frameworks */,
 				ABB4A94CACEEB67EF2183828 /* Pods_notifications.framework in Frameworks */,
@@ -97,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411E7EDD2F4341B8006EB692 /* UserNotifications.framework in Frameworks */,
 				97ABC7D0D7DA9AED2ABE1A4A /* Pods_SleepLights.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +132,7 @@
 		50CC47F27439AA4ED36ECA57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				411E7EDC2F4341B8006EB692 /* UserNotifications.framework */,
 				4100BC222F43364F00B2748A /* FirebaseMessaging.framework */,
 				4100BC1E2F43364900B2748A /* FirebaseCore.framework */,
 				4100BB472F432C1900B2748A /* FirebaseMessaging.framework */,
@@ -183,8 +189,8 @@
 				41E41FAB2EB1A83300D7C75E /* Sources */,
 				41E41FAC2EB1A83300D7C75E /* Frameworks */,
 				41E41FAD2EB1A83300D7C75E /* Resources */,
-				41806DBF2F432A1900075CC3 /* Embed Foundation Extensions */,
 				B83EE4DA1A4B8E7046864958 /* [CP] Embed Pods Frameworks */,
+				41806DBF2F432A1900075CC3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
