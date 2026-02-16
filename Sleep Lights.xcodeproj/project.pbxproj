@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4107DB5C2F43252D00425021 /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060D2F4312E50032E3DC /* AppsFlyerLib.xcframework */; };
+		4107DB5D2F43252D00425021 /* AppsFlyerLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060D2F4312E50032E3DC /* AppsFlyerLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		414897F82F4311900057F92F /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 414897F12F4311900057F92F /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		41C806072F4312D20032E3DC /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C806062F4312D20032E3DC /* FirebaseCore.framework */; };
 		41C8060B2F4312D90032E3DC /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060A2F4312D90032E3DC /* FirebaseMessaging.framework */; };
@@ -27,6 +29,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4107DB5E2F43252D00425021 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4107DB5D2F43252D00425021 /* AppsFlyerLib.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		414897F92F4311900057F92F /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,8 +91,6 @@
 		};
 		41E41FB12EB1A83300D7C75E /* Sleep Lights */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "Sleep Lights";
 			sourceTree = "<group>";
 		};
@@ -100,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4107DB5C2F43252D00425021 /* AppsFlyerLib.xcframework in Frameworks */,
 				41C806162F4312FB0032E3DC /* FirebaseMessaging.framework in Frameworks */,
 				41C806122F4312F10032E3DC /* FirebaseCore.framework in Frameworks */,
 				C094542085BB0A5AD03D57C9 /* Pods_Sleep_Lights.framework in Frameworks */,
@@ -191,6 +203,7 @@
 				414897F92F4311900057F92F /* Embed Foundation Extensions */,
 				C4AD1731EB065C594216039F /* [CP] Embed Pods Frameworks */,
 				5914B3B2FEB703E3E7E8E197 /* [CP] Copy Pods Resources */,
+				4107DB5E2F43252D00425021 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,9 +282,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-notifications/Pods-notifications-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-notifications/Pods-notifications-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -286,9 +303,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -303,9 +324,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
