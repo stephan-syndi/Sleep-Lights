@@ -1,8 +1,8 @@
-project 'Sleep Lights.xcodeproj'
+project 'SleepLights.xcodeproj'
 
 platform :ios, '15.0'
 
-target 'Sleep Lights' do
+target 'SleepLights' do
   use_frameworks!
 
   pod 'Alamofire', '~> 5.9'

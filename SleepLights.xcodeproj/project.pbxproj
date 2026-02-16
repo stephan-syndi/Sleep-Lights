@@ -13,8 +13,8 @@
 		4100BC232F43364F00B2748A /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100BC222F43364F00B2748A /* FirebaseMessaging.framework */; };
 		4100BC252F43365500B2748A /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100BB402F432C0C00B2748A /* AppsFlyerLib.xcframework */; };
 		41806DBA2F432A1900075CC3 /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 41806DB32F432A1900075CC3 /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		78E1AE61B120DB5DF5692DDC /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8567EB76BE2FC0DB9EBB41 /* Pods_notifications.framework */; };
-		87E363BA16FE93C876292CE2 /* Pods_Sleep_Lights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F819D54B321C5AB62EF19D54 /* Pods_Sleep_Lights.framework */; };
+		97ABC7D0D7DA9AED2ABE1A4A /* Pods_SleepLights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FAFAD6562FD1CB41E5DA9C /* Pods_SleepLights.framework */; };
+		ABB4A94CACEEB67EF2183828 /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2C94BAE726E0D37F35A2D5 /* Pods_notifications.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		32F8A83199B84F5D9E8DDE4F /* Pods-Sleep Lights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sleep Lights.debug.xcconfig"; path = "Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights.debug.xcconfig"; sourceTree = "<group>"; };
+		2A2C94BAE726E0D37F35A2D5 /* Pods_notifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4100BB392F432BFB00B2748A /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4100BB3D2F432C0000B2748A /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4100BB402F432C0C00B2748A /* AppsFlyerLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AppsFlyerLib.xcframework; path = Pods/AppsFlyerFramework/binaries/xcframework/full/AppsFlyerLib.xcframework; sourceTree = "<group>"; };
@@ -51,12 +51,12 @@
 		4100BC1E2F43364900B2748A /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4100BC222F43364F00B2748A /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41806DB32F432A1900075CC3 /* notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		41E41FAF2EB1A83300D7C75E /* Sleep Lights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Lights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		653965504CF07091168D9038 /* Pods-Sleep Lights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sleep Lights.release.xcconfig"; path = "Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights.release.xcconfig"; sourceTree = "<group>"; };
-		6A8567EB76BE2FC0DB9EBB41 /* Pods_notifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77A546D224BE99E99E59BEDB /* Pods-notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.release.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.release.xcconfig"; sourceTree = "<group>"; };
-		8BDAD85AA46E3B89932DB028 /* Pods-notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.debug.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.debug.xcconfig"; sourceTree = "<group>"; };
-		F819D54B321C5AB62EF19D54 /* Pods_Sleep_Lights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sleep_Lights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E41FAF2EB1A83300D7C75E /* SleepLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		512F7879942BAFD3FEEBC6EA /* Pods-notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.release.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.release.xcconfig"; sourceTree = "<group>"; };
+		70B2CC922FAE1A6EC3063370 /* Pods-SleepLights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepLights.release.xcconfig"; path = "Target Support Files/Pods-SleepLights/Pods-SleepLights.release.xcconfig"; sourceTree = "<group>"; };
+		9F4E4C46D59643A18287D617 /* Pods-SleepLights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepLights.debug.xcconfig"; path = "Target Support Files/Pods-SleepLights/Pods-SleepLights.debug.xcconfig"; sourceTree = "<group>"; };
+		DEBCF2AE604075FA94BF9CA3 /* Pods-notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.debug.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.debug.xcconfig"; sourceTree = "<group>"; };
+		F3FAFAD6562FD1CB41E5DA9C /* Pods_SleepLights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepLights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -94,7 +94,7 @@
 			files = (
 				4100BB3E2F432C0000B2748A /* FirebaseMessaging.framework in Frameworks */,
 				4100BB3A2F432BFB00B2748A /* FirebaseCore.framework in Frameworks */,
-				78E1AE61B120DB5DF5692DDC /* Pods_notifications.framework in Frameworks */,
+				ABB4A94CACEEB67EF2183828 /* Pods_notifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 				4100BC252F43365500B2748A /* AppsFlyerLib.xcframework in Frameworks */,
 				4100BC232F43364F00B2748A /* FirebaseMessaging.framework in Frameworks */,
 				4100BC1F2F43364900B2748A /* FirebaseCore.framework in Frameworks */,
-				87E363BA16FE93C876292CE2 /* Pods_Sleep_Lights.framework in Frameworks */,
+				97ABC7D0D7DA9AED2ABE1A4A /* Pods_SleepLights.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 		41E41FB02EB1A83300D7C75E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41E41FAF2EB1A83300D7C75E /* Sleep Lights.app */,
+				41E41FAF2EB1A83300D7C75E /* SleepLights.app */,
 				41806DB32F432A1900075CC3 /* notifications.appex */,
 			);
 			name = Products;
@@ -142,8 +142,8 @@
 				4100BB402F432C0C00B2748A /* AppsFlyerLib.xcframework */,
 				4100BB3D2F432C0000B2748A /* FirebaseMessaging.framework */,
 				4100BB392F432BFB00B2748A /* FirebaseCore.framework */,
-				F819D54B321C5AB62EF19D54 /* Pods_Sleep_Lights.framework */,
-				6A8567EB76BE2FC0DB9EBB41 /* Pods_notifications.framework */,
+				F3FAFAD6562FD1CB41E5DA9C /* Pods_SleepLights.framework */,
+				2A2C94BAE726E0D37F35A2D5 /* Pods_notifications.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,10 +151,10 @@
 		AECC19640505084794E0AF85 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				32F8A83199B84F5D9E8DDE4F /* Pods-Sleep Lights.debug.xcconfig */,
-				653965504CF07091168D9038 /* Pods-Sleep Lights.release.xcconfig */,
-				8BDAD85AA46E3B89932DB028 /* Pods-notifications.debug.xcconfig */,
-				77A546D224BE99E99E59BEDB /* Pods-notifications.release.xcconfig */,
+				9F4E4C46D59643A18287D617 /* Pods-SleepLights.debug.xcconfig */,
+				70B2CC922FAE1A6EC3063370 /* Pods-SleepLights.release.xcconfig */,
+				DEBCF2AE604075FA94BF9CA3 /* Pods-notifications.debug.xcconfig */,
+				512F7879942BAFD3FEEBC6EA /* Pods-notifications.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41806DBC2F432A1900075CC3 /* Build configuration list for PBXNativeTarget "notifications" */;
 			buildPhases = (
-				AF11FF41D1C0C5097FC54863 /* [CP] Check Pods Manifest.lock */,
+				769B0F956EFFF90D9592154C /* [CP] Check Pods Manifest.lock */,
 				41806DAF2F432A1900075CC3 /* Sources */,
 				41806DB02F432A1900075CC3 /* Frameworks */,
 				41806DB12F432A1900075CC3 /* Resources */,
@@ -183,16 +183,16 @@
 			productReference = 41806DB32F432A1900075CC3 /* notifications.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		41E41FAE2EB1A83300D7C75E /* Sleep Lights */ = {
+		41E41FAE2EB1A83300D7C75E /* SleepLights */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41E41FBA2EB1A83600D7C75E /* Build configuration list for PBXNativeTarget "Sleep Lights" */;
+			buildConfigurationList = 41E41FBA2EB1A83600D7C75E /* Build configuration list for PBXNativeTarget "SleepLights" */;
 			buildPhases = (
-				771EA23A0BCF3D05947D48CD /* [CP] Check Pods Manifest.lock */,
+				601DE27AFAEDFE2287E78A35 /* [CP] Check Pods Manifest.lock */,
 				41E41FAB2EB1A83300D7C75E /* Sources */,
 				41E41FAC2EB1A83300D7C75E /* Frameworks */,
 				41E41FAD2EB1A83300D7C75E /* Resources */,
 				41806DBF2F432A1900075CC3 /* Embed Foundation Extensions */,
-				0131CEBAD1E08F22C004012C /* [CP] Embed Pods Frameworks */,
+				B83EE4DA1A4B8E7046864958 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,9 +202,9 @@
 			fileSystemSynchronizedGroups = (
 				41E41FB12EB1A83300D7C75E /* Sleep Lights */,
 			);
-			name = "Sleep Lights";
+			name = SleepLights;
 			productName = "Sleep Lights";
-			productReference = 41E41FAF2EB1A83300D7C75E /* Sleep Lights.app */;
+			productReference = 41E41FAF2EB1A83300D7C75E /* SleepLights.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 41E41FAA2EB1A83300D7C75E /* Build configuration list for PBXProject "Sleep Lights" */;
+			buildConfigurationList = 41E41FAA2EB1A83300D7C75E /* Build configuration list for PBXProject "SleepLights" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -239,7 +239,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41E41FAE2EB1A83300D7C75E /* Sleep Lights */,
+				41E41FAE2EB1A83300D7C75E /* SleepLights */,
 				41806DB22F432A1900075CC3 /* notifications */,
 			);
 		};
@@ -263,24 +263,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0131CEBAD1E08F22C004012C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		771EA23A0BCF3D05947D48CD /* [CP] Check Pods Manifest.lock */ = {
+		601DE27AFAEDFE2287E78A35 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,14 +278,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Sleep Lights-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SleepLights-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AF11FF41D1C0C5097FC54863 /* [CP] Check Pods Manifest.lock */ = {
+		769B0F956EFFF90D9592154C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,6 +305,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B83EE4DA1A4B8E7046864958 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepLights/Pods-SleepLights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepLights/Pods-SleepLights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SleepLights/Pods-SleepLights-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -354,7 +354,7 @@
 /* Begin XCBuildConfiguration section */
 		41806DBD2F432A1900075CC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BDAD85AA46E3B89932DB028 /* Pods-notifications.debug.xcconfig */;
+			baseConfigurationReference = DEBCF2AE604075FA94BF9CA3 /* Pods-notifications.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = notifications/notifications.entitlements;
 				CODE_SIGN_STYLE = Manual;
@@ -390,7 +390,7 @@
 		};
 		41806DBE2F432A1900075CC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77A546D224BE99E99E59BEDB /* Pods-notifications.release.xcconfig */;
+			baseConfigurationReference = 512F7879942BAFD3FEEBC6EA /* Pods-notifications.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = notifications/notifications.entitlements;
 				CODE_SIGN_STYLE = Manual;
@@ -545,7 +545,7 @@
 		};
 		41E41FBB2EB1A83600D7C75E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32F8A83199B84F5D9E8DDE4F /* Pods-Sleep Lights.debug.xcconfig */;
+			baseConfigurationReference = 9F4E4C46D59643A18287D617 /* Pods-SleepLights.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -587,7 +587,7 @@
 		};
 		41E41FBC2EB1A83600D7C75E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 653965504CF07091168D9038 /* Pods-Sleep Lights.release.xcconfig */;
+			baseConfigurationReference = 70B2CC922FAE1A6EC3063370 /* Pods-SleepLights.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -639,7 +639,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41E41FAA2EB1A83300D7C75E /* Build configuration list for PBXProject "Sleep Lights" */ = {
+		41E41FAA2EB1A83300D7C75E /* Build configuration list for PBXProject "SleepLights" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41E41FB82EB1A83600D7C75E /* Debug */,
@@ -648,7 +648,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41E41FBA2EB1A83600D7C75E /* Build configuration list for PBXNativeTarget "Sleep Lights" */ = {
+		41E41FBA2EB1A83600D7C75E /* Build configuration list for PBXNativeTarget "SleepLights" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41E41FBB2EB1A83600D7C75E /* Debug */,

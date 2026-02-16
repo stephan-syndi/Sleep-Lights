@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Sleep_LightsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Sleep_LightsVersionString[];
+FOUNDATION_EXPORT double Pods_SleepLightsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SleepLightsVersionString[];
 
