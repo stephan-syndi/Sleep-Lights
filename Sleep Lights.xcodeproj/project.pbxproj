@@ -10,9 +10,10 @@
 		414897F82F4311900057F92F /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 414897F12F4311900057F92F /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		41C806072F4312D20032E3DC /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C806062F4312D20032E3DC /* FirebaseCore.framework */; };
 		41C8060B2F4312D90032E3DC /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060A2F4312D90032E3DC /* FirebaseMessaging.framework */; };
-		41C8060E2F4312E50032E3DC /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060D2F4312E50032E3DC /* AppsFlyerLib.xcframework */; };
 		41C806122F4312F10032E3DC /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C806112F4312F10032E3DC /* FirebaseCore.framework */; };
 		41C806162F4312FB0032E3DC /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C806152F4312FB0032E3DC /* FirebaseMessaging.framework */; };
+		41C807552F4320EA0032E3DC /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060D2F4312E50032E3DC /* AppsFlyerLib.xcframework */; };
+		41C807562F4320EA0032E3DC /* AppsFlyerLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060D2F4312E50032E3DC /* AppsFlyerLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E2AC4DFC3A2835C4190994FD /* Pods_Sleep_Lights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40919F270CECF690FBE0044 /* Pods_Sleep_Lights.framework */; };
 		F670734F6D037F6423BBE903 /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89EDD47020A46D3B9FBB9F7 /* Pods_notifications.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,17 @@
 				414897F82F4311900057F92F /* notifications.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C807572F4320EA0032E3DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41C807562F4320EA0032E3DC /* AppsFlyerLib.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -99,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41C8060E2F4312E50032E3DC /* AppsFlyerLib.xcframework in Frameworks */,
+				41C807552F4320EA0032E3DC /* AppsFlyerLib.xcframework in Frameworks */,
 				E2AC4DFC3A2835C4190994FD /* Pods_Sleep_Lights.framework in Frameworks */,
 				41C806162F4312FB0032E3DC /* FirebaseMessaging.framework in Frameworks */,
 				41C806122F4312F10032E3DC /* FirebaseCore.framework in Frameworks */,
@@ -191,6 +203,7 @@
 				7BA201B8446C93C941D8F2C0 /* [CP] Copy Pods Resources */,
 				E45D2849E7A92C3A03B43FC2 /* [CP] Embed Pods Frameworks */,
 				414897F92F4311900057F92F /* Embed Foundation Extensions */,
+				41C807572F4320EA0032E3DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
