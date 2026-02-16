@@ -200,10 +200,10 @@
 				41E41FAB2EB1A83300D7C75E /* Sources */,
 				41E41FAC2EB1A83300D7C75E /* Frameworks */,
 				41E41FAD2EB1A83300D7C75E /* Resources */,
-				414897F92F4311900057F92F /* Embed Foundation Extensions */,
-				C4AD1731EB065C594216039F /* [CP] Embed Pods Frameworks */,
-				5914B3B2FEB703E3E7E8E197 /* [CP] Copy Pods Resources */,
 				4107DB5E2F43252D00425021 /* Embed Frameworks */,
+				5914B3B2FEB703E3E7E8E197 /* [CP] Copy Pods Resources */,
+				C4AD1731EB065C594216039F /* [CP] Embed Pods Frameworks */,
+				414897F92F4311900057F92F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
