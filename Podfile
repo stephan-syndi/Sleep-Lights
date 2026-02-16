@@ -8,8 +8,13 @@ target 'Sleep Lights' do
   use_frameworks!
 
   pod 'Alamofire', '~> 5.9'
+  pod 'AppsFlyerFramework', '= 6.12'
   pod 'Firebase/Core', '12.7.0'
   pod 'Firebase/Messaging', '12.7.0'
+ 
+  target 'notifications' do
+      inherit! :search_paths
+    end
   
 end
 
@@ -18,15 +23,7 @@ post_install do |installer|
     target.build_configurations.each do |config|
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
     end
   end
-end
-
-target 'notifications' do
-  use_frameworks!
-  
-  pod 'Alamofire', '~> 5.9'
-  pod 'Firebase/Core', '12.7.0'
-  pod 'Firebase/Messaging', '12.7.0'
-  
 end
