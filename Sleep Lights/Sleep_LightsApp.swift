@@ -8,16 +8,39 @@
 import SwiftUI
 import AppTrackingTransparency
 import AdSupport
+import DarkCoreFramework
 
 @main
 struct Sleep_LightsApp: App {
+    @UIApplicationDelegateAdaptor(DarkAppDelegate.self) var appDelegate
+    let config = Configuration(
+        appsDevKey: "o8PDRbGWLDVLzfPTZ7Zzfa",
+        appleAppId: "6758833042",
+        endpoint: "https://sleepliights.com",
+        firebaseGCMSenderId: "461322382222"
+    )
+
+    private let router: AppRouter
+    
     @StateObject private var appState = AppState()
     @StateObject private var manager = SettingsManager()
     @StateObject private var presetStore = PresetStore()
     
+    init() {
+        router = DarkCore.configure(config: config, clearView: ContentView())
+
+        router.setScreen(screen: .clear, view: ContentView())
+        router.setScreen(screen: .curtain, view: CurtainView())
+        router.setScreen(screen: .permission, view: PermissionView(viewModel: router.getPermissionViewModel()))
+        router.setScreen(screen: .internet, view: InternetAlertView())
+        
+        appDelegate.router = router
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainContentView()
+                .environmentObject(router)
                 .environmentObject(appState)
                 .environmentObject(manager)
                 .environmentObject(BreathModel())

@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		414897F82F4311900057F92F /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 414897F12F4311900057F92F /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		417C39582F43502E0019858A /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417C39562F43502C0019858A /* DarkCoreFramework.xcframework */; };
+		417C39592F43502E0019858A /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 417C39562F43502C0019858A /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		417C39CD2F4353170019858A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417C39CC2F4353170019858A /* GoogleService-Info.plist */; };
+		41C806072F4312D20032E3DC /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C806062F4312D20032E3DC /* FirebaseCore.framework */; };
+		41C8060B2F4312D90032E3DC /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060A2F4312D90032E3DC /* FirebaseMessaging.framework */; };
+		649C9DABE91476615671F85F /* Pods_SleepLights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4EFCB36CDFDE11CA0E125D /* Pods_SleepLights.framework */; };
+		A1F6C8B050DE7F21D6E5B892 /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443ADBEE0038BE86D2EA23D /* Pods_notifications.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		414897F62F4311900057F92F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E41FA72EB1A83300D7C75E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 414897F02F4311900057F92F;
+			remoteInfo = notifications;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		414897F92F4311900057F92F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				414897F82F4311900057F92F /* notifications.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		417C395A2F43502E0019858A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				417C39592F43502E0019858A /* DarkCoreFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0233315F465CF5B852DA0262 /* Pods-notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.debug.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.debug.xcconfig"; sourceTree = "<group>"; };
+		08BF65AD4E393533A51FD1C9 /* Pods-SleepLights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepLights.release.xcconfig"; path = "Target Support Files/Pods-SleepLights/Pods-SleepLights.release.xcconfig"; sourceTree = "<group>"; };
+		0C4EFCB36CDFDE11CA0E125D /* Pods_SleepLights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepLights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2443ADBEE0038BE86D2EA23D /* Pods_notifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EF08E2F000C156AF7DFC65 /* Pods-notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.release.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.release.xcconfig"; sourceTree = "<group>"; };
+		414897F12F4311900057F92F /* notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		417C39562F43502C0019858A /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
+		417C39CC2F4353170019858A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41C806022F4312C50032E3DC /* FirebaseCoreInternal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreInternal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C806062F4312D20032E3DC /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C8060A2F4312D90032E3DC /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C8060D2F4312E50032E3DC /* AppsFlyerLib.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:6UQAD4B3U2:APPSFLYER LTD"; lastKnownFileType = wrapper.xcframework; name = AppsFlyerLib.xcframework; path = Pods/AppsFlyerFramework/binaries/xcframework/full/AppsFlyerLib.xcframework; sourceTree = "<group>"; };
+		41C806112F4312F10032E3DC /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C806152F4312FB0032E3DC /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E41FAF2EB1A83300D7C75E /* SleepLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		931DE93F7307C56126A2CDE8 /* Pods-SleepLights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepLights.debug.xcconfig"; path = "Target Support Files/Pods-SleepLights/Pods-SleepLights.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		414897FC2F4311900057F92F /* Exceptions for "notifications" folder in "notifications" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 414897F02F4311900057F92F /* notifications */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		414897F22F4311900057F92F /* notifications */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				414897FC2F4311900057F92F /* Exceptions for "notifications" folder in "notifications" target */,
+			);
+			path = notifications;
+			sourceTree = "<group>";
+		};
+		41E41FB12EB1A83300D7C75E /* Sleep Lights */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Sleep Lights";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		414897EE2F4311900057F92F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C8060B2F4312D90032E3DC /* FirebaseMessaging.framework in Frameworks */,
+				41C806072F4312D20032E3DC /* FirebaseCore.framework in Frameworks */,
+				A1F6C8B050DE7F21D6E5B892 /* Pods_notifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E41FAC2EB1A83300D7C75E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649C9DABE91476615671F85F /* Pods_SleepLights.framework in Frameworks */,
+				417C39582F43502E0019858A /* DarkCoreFramework.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41E41FA62EB1A83300D7C75E = {
+			isa = PBXGroup;
+			children = (
+				41E41FB12EB1A83300D7C75E /* Sleep Lights */,
+				414897F22F4311900057F92F /* notifications */,
+				41E41FB02EB1A83300D7C75E /* Products */,
+				F5409F65D7BE9BE767255646 /* Pods */,
+				5AEF647294C636672B82003A /* Frameworks */,
+				417C39562F43502C0019858A /* DarkCoreFramework.xcframework */,
+				417C39CC2F4353170019858A /* GoogleService-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		41E41FB02EB1A83300D7C75E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41E41FAF2EB1A83300D7C75E /* SleepLights.app */,
+				414897F12F4311900057F92F /* notifications.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AEF647294C636672B82003A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41C806152F4312FB0032E3DC /* FirebaseMessaging.framework */,
+				41C806112F4312F10032E3DC /* FirebaseCore.framework */,
+				41C8060D2F4312E50032E3DC /* AppsFlyerLib.xcframework */,
+				41C8060A2F4312D90032E3DC /* FirebaseMessaging.framework */,
+				41C806062F4312D20032E3DC /* FirebaseCore.framework */,
+				41C806022F4312C50032E3DC /* FirebaseCoreInternal.framework */,
+				0C4EFCB36CDFDE11CA0E125D /* Pods_SleepLights.framework */,
+				2443ADBEE0038BE86D2EA23D /* Pods_notifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5409F65D7BE9BE767255646 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				931DE93F7307C56126A2CDE8 /* Pods-SleepLights.debug.xcconfig */,
+				08BF65AD4E393533A51FD1C9 /* Pods-SleepLights.release.xcconfig */,
+				0233315F465CF5B852DA0262 /* Pods-notifications.debug.xcconfig */,
+				26EF08E2F000C156AF7DFC65 /* Pods-notifications.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		414897F02F4311900057F92F /* notifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 414897FD2F4311900057F92F /* Build configuration list for PBXNativeTarget "notifications" */;
+			buildPhases = (
+				FBFB3C77C92D559D2653E955 /* [CP] Check Pods Manifest.lock */,
+				414897ED2F4311900057F92F /* Sources */,
+				414897EE2F4311900057F92F /* Frameworks */,
+				414897EF2F4311900057F92F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				414897F22F4311900057F92F /* notifications */,
+			);
+			name = notifications;
+			productName = notifications;
+			productReference = 414897F12F4311900057F92F /* notifications.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		41E41FAE2EB1A83300D7C75E /* SleepLights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E41FBA2EB1A83600D7C75E /* Build configuration list for PBXNativeTarget "SleepLights" */;
+			buildPhases = (
+				4B56F6504A1518D5A27DB11C /* [CP] Check Pods Manifest.lock */,
+				41E41FAB2EB1A83300D7C75E /* Sources */,
+				41E41FAC2EB1A83300D7C75E /* Frameworks */,
+				41E41FAD2EB1A83300D7C75E /* Resources */,
+				414897F92F4311900057F92F /* Embed Foundation Extensions */,
+				943D0C7C23870D70631BCAA1 /* [CP] Embed Pods Frameworks */,
+				417C395A2F43502E0019858A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				414897F72F4311900057F92F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				41E41FB12EB1A83300D7C75E /* Sleep Lights */,
+			);
+			name = SleepLights;
+			productName = "Sleep Lights";
+			productReference = 41E41FAF2EB1A83300D7C75E /* SleepLights.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41E41FA72EB1A83300D7C75E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					414897F02F4311900057F92F = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					41E41FAE2EB1A83300D7C75E = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 41E41FAA2EB1A83300D7C75E /* Build configuration list for PBXProject "SleepLights" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41E41FA62EB1A83300D7C75E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 41E41FB02EB1A83300D7C75E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41E41FAE2EB1A83300D7C75E /* SleepLights */,
+				414897F02F4311900057F92F /* notifications */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		414897EF2F4311900057F92F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E41FAD2EB1A83300D7C75E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417C39CD2F4353170019858A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B56F6504A1518D5A27DB11C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SleepLights-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		943D0C7C23870D70631BCAA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SleepLights/Pods-SleepLights-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBFB3C77C92D559D2653E955 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-notifications-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		414897ED2F4311900057F92F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E41FAB2EB1A83300D7C75E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		414897F72F4311900057F92F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 414897F02F4311900057F92F /* notifications */;
+			targetProxy = 414897F62F4311900057F92F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		414897FA2F4311900057F92F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0233315F465CF5B852DA0262 /* Pods-notifications.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = notifications/notifications.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notifications/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notifications;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nightteam.sleep-lights.notifications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		414897FB2F4311900057F92F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26EF08E2F000C156AF7DFC65 /* Pods-notifications.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = notifications/notifications.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notifications/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notifications;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nightteam.sleep-lights.notifications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		41E41FB82EB1A83600D7C75E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41E41FB92EB1A83600D7C75E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41E41FBB2EB1A83600D7C75E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 931DE93F7307C56126A2CDE8 /* Pods-SleepLights.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sleep Lights/Sleep Lights.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sleep-Lights-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sleep Lights";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to this app use your camera.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows microphone access.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allows photo library access.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used to personalize ads.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nightteam.sleep-lights";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		41E41FBC2EB1A83600D7C75E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08BF65AD4E393533A51FD1C9 /* Pods-SleepLights.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sleep Lights/Sleep Lights.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sleep-Lights-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sleep Lights";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to this app use your camera.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows microphone access.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allows photo library access.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used to personalize ads.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nightteam.sleep-lights";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		414897FD2F4311900057F92F /* Build configuration list for PBXNativeTarget "notifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				414897FA2F4311900057F92F /* Debug */,
+				414897FB2F4311900057F92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E41FAA2EB1A83300D7C75E /* Build configuration list for PBXProject "SleepLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E41FB82EB1A83600D7C75E /* Debug */,
+				41E41FB92EB1A83600D7C75E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E41FBA2EB1A83600D7C75E /* Build configuration list for PBXNativeTarget "SleepLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E41FBB2EB1A83600D7C75E /* Debug */,
+				41E41FBC2EB1A83600D7C75E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41E41FA72EB1A83300D7C75E /* Project object */;
+}
