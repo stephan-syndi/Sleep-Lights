@@ -96,6 +96,12 @@ jobs:
       - name: Install CocoaPods dependencies
         run: pod install --repo-update --no-ansi --verbose
 
+      - name: Clean and reinstall Pods
+        run: |
+          rm -rf Pods Podfile.lock
+          pod deintegrate || true
+          pod install --repo-update
+
       # 👉 Теперь запускаем сборку
       - name: Build (нативный через Fastlane)
         env:
