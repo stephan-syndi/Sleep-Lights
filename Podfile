@@ -1,21 +1,16 @@
-# project '/Volumes/Shared/Syndi/Swift/Sleep-Lights/Sleep Lights.xcodeproj'
-
-# Uncomment the next line to define a global platform for your project
 platform :ios, '15.0'
 
 target 'Sleep Lights' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   pod 'Alamofire', '~> 5.9'
   pod 'AppsFlyerFramework', '= 6.12'
   pod 'Firebase/Core', '12.7.0'
   pod 'Firebase/Messaging', '12.7.0'
- 
-  target 'notifications' do
-      inherit! :search_paths
-    end
   
+  target 'notifications' do
+    inherit! :complete
+  end
 end
 
 post_install do |installer|
@@ -24,6 +19,15 @@ post_install do |installer|
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+      config.build_settings['SKIP_INSTALL'] = 'NO'
+    end
+  end
+  
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+      end
     end
   end
 end
