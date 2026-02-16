@@ -51,16 +51,11 @@ jobs:
           find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
           echo "::endgroup::"
 
-      - name: Check Copy XCFrameworks script
+      - name: Clean and reinstall Pods
         run: |
-          echo "::group::AppsFlyerFramework copy script"
-          cat Pods/Target\ Support\ Files/AppsFlyerFramework/AppsFlyerFramework-xcframeworks.sh
-          echo "::endgroup::"
-          
-          echo "::group::Check XCFramework exists"
-          ls -la Pods/AppsFlyerFramework/ || true
-          find Pods -name "*.xcframework" || true
-          echo "::endgroup::"
+          rm -rf Pods Podfile.lock
+          pod deintegrate || true
+          pod install --repo-update
 
       - name: Build (нативный через Fastlane)
         env:
