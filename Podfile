@@ -8,7 +8,6 @@ target 'Sleep Lights' do
   use_frameworks!
 
   pod 'Alamofire', '~> 5.9'
-  pod 'AppsFlyerFramework', '= 6.12'
   pod 'Firebase/Core', '12.7.0'
   pod 'Firebase/Messaging', '12.7.0'
   
@@ -27,7 +26,6 @@ target 'notifications' do
   use_frameworks!
   
   pod 'Alamofire', '~> 5.9'
-  pod 'AppsFlyerFramework', '= 6.12'
   pod 'Firebase/Core', '12.7.0'
   pod 'Firebase/Messaging', '12.7.0'
   
