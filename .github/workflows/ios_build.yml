@@ -51,6 +51,17 @@ jobs:
           find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
           echo "::endgroup::"
 
+      - name: Check Copy XCFrameworks script
+        run: |
+          echo "::group::AppsFlyerFramework copy script"
+          cat Pods/Target\ Support\ Files/AppsFlyerFramework/AppsFlyerFramework-xcframeworks.sh
+          echo "::endgroup::"
+          
+          echo "::group::Check XCFramework exists"
+          ls -la Pods/AppsFlyerFramework/ || true
+          find Pods -name "*.xcframework" || true
+          echo "::endgroup::"
+
       - name: Build (нативный через Fastlane)
         env:
           # App Store Connect
@@ -81,10 +92,3 @@ jobs:
           git config --global user.name  "${GIT_FULL_NAME}"
           git config --global user.email "${GIT_USER_EMAIL}"
           bundle exec fastlane ios build
-          
-      - name: Upload build log on failure
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-log
-          path: build.log
