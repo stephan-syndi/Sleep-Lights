@@ -79,8 +79,6 @@
 		};
 		41E41FB12EB1A83300D7C75E /* Sleep Lights */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "Sleep Lights";
 			sourceTree = "<group>";
 		};
@@ -190,9 +188,9 @@
 				41E41FAB2EB1A83300D7C75E /* Sources */,
 				41E41FAC2EB1A83300D7C75E /* Frameworks */,
 				41E41FAD2EB1A83300D7C75E /* Resources */,
-				414897F92F4311900057F92F /* Embed Foundation Extensions */,
-				E45D2849E7A92C3A03B43FC2 /* [CP] Embed Pods Frameworks */,
 				7BA201B8446C93C941D8F2C0 /* [CP] Copy Pods Resources */,
+				E45D2849E7A92C3A03B43FC2 /* [CP] Embed Pods Frameworks */,
+				414897F92F4311900057F92F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -293,9 +291,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,9 +334,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sleep Lights/Pods-Sleep Lights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,9 +355,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-notifications/Pods-notifications-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-notifications/Pods-notifications-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
