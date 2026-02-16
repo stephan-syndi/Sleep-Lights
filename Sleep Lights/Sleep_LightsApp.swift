@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AppTrackingTransparency
+import AdSupport
 
 @main
 struct Sleep_LightsApp: App {
@@ -21,6 +23,16 @@ struct Sleep_LightsApp: App {
                 .environmentObject(BreathModel())
                 .environmentObject(presetStore)
                 .environmentObject(ThemeManager(store: presetStore))
+                .onAppear{
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { requestTrackingPermission() }
+                }
+        }
+    }
+    
+    private func requestTrackingPermission() {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+            }
         }
     }
 }
