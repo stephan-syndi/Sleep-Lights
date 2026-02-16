@@ -1,4 +1,4 @@
-project '/Volumes/Shared/Syndi/Swift/Sleep-Lights/Sleep Lights.xcodeproj'
+# project '/Volumes/Shared/Syndi/Swift/Sleep-Lights/Sleep Lights.xcodeproj'
 
 # Uncomment the next line to define a global platform for your project
 platform :ios, '15.0'
