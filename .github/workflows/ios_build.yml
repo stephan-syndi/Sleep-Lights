@@ -91,4 +91,5 @@ jobs:
         run: |
           git config --global user.name  "${GIT_FULL_NAME}"
           git config --global user.email "${GIT_USER_EMAIL}"
+          rm -rf ~/Library/Developer/Xcode/DerivedData
           bundle exec fastlane ios build
