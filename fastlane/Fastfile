@@ -123,6 +123,7 @@ platform :ios do
     UI.message "🔍 Main profile: #{main_profile}"
     UI.message "🔍 Ext profile: #{ext_profile}"
     UI.message "🔍 Team ID: #{main_team_id}"
+    UI.message "🔍 Project path: #{project_or_workspace_path}"
 
     update_code_signing_settings(
       use_automatic_signing: false,
