@@ -571,7 +571,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sleep-Lights-Info.plist";
+				INFOPLIST_FILE = "SleepLights-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sleep Lights";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to this app use your camera.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows microphone access.";
@@ -618,7 +618,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sleep-Lights-Info.plist";
+				INFOPLIST_FILE = "SleepLights-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sleep Lights";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to this app use your camera.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows microphone access.";
