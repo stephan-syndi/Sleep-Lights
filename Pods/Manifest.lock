@@ -112,12 +112,14 @@ PODS:
   - nanopb/decode (3.30910.0)
   - nanopb/encode (3.30910.0)
   - PromisesObjC (2.4.0)
+  - Swinject (2.9.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.9)
   - AppsFlyerFramework (= 6.12)
   - Firebase/Core (= 12.7.0)
   - Firebase/Messaging (= 12.7.0)
+  - Swinject
 
 SPEC REPOS:
   trunk:
@@ -135,6 +137,7 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - PromisesObjC
+    - Swinject
 
 SPEC CHECKSUMS:
   Alamofire: eec6cd8f73b242b59e34153a606a909eb9864b14
@@ -151,7 +154,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
+  Swinject: a827d508c6270da03ec74e558e728917a888fa9b
 
-PODFILE CHECKSUM: 5e7b90d8dd9bd86954ba6e869063ff7d28b3e887
+PODFILE CHECKSUM: 18627636c1edfb81d3ef6a6e925a83e5593aba14
 
 COCOAPODS: 1.16.2

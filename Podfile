@@ -14,6 +14,7 @@ target 'SleepLights' do
   pod 'AppsFlyerFramework', '= 6.12'
   pod 'Firebase/Core', '12.7.0'
   pod 'Firebase/Messaging', '12.7.0'
+  pod 'Swinject'
   
 end
 
@@ -33,5 +34,6 @@ target 'notifications' do
   pod 'AppsFlyerFramework', '= 6.12'
   pod 'Firebase/Core', '12.7.0'
   pod 'Firebase/Messaging', '12.7.0'
+  pod 'Swinject'
   
 end

@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		414897F82F4311900057F92F /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 414897F12F4311900057F92F /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		417C39582F43502E0019858A /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417C39562F43502C0019858A /* DarkCoreFramework.xcframework */; };
-		417C39592F43502E0019858A /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 417C39562F43502C0019858A /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		417C39CD2F4353170019858A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417C39CC2F4353170019858A /* GoogleService-Info.plist */; };
+		41C1DE6A2F44B8C9004E6EA1 /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C1DE682F44B8C3004E6EA1 /* DarkCoreFramework.xcframework */; };
+		41C1DE6B2F44B8C9004E6EA1 /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C1DE682F44B8C3004E6EA1 /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41C806072F4312D20032E3DC /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C806062F4312D20032E3DC /* FirebaseCore.framework */; };
 		41C8060B2F4312D90032E3DC /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060A2F4312D90032E3DC /* FirebaseMessaging.framework */; };
 		649C9DABE91476615671F85F /* Pods_SleepLights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4EFCB36CDFDE11CA0E125D /* Pods_SleepLights.framework */; };
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				417C39592F43502E0019858A /* DarkCoreFramework.xcframework in Embed Frameworks */,
+				41C1DE6B2F44B8C9004E6EA1 /* DarkCoreFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,8 +59,8 @@
 		2443ADBEE0038BE86D2EA23D /* Pods_notifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EF08E2F000C156AF7DFC65 /* Pods-notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.release.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.release.xcconfig"; sourceTree = "<group>"; };
 		414897F12F4311900057F92F /* notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		417C39562F43502C0019858A /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
 		417C39CC2F4353170019858A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41C1DE682F44B8C3004E6EA1 /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
 		41C806022F4312C50032E3DC /* FirebaseCoreInternal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreInternal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C806062F4312D20032E3DC /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C8060A2F4312D90032E3DC /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +92,8 @@
 		};
 		41E41FB12EB1A83300D7C75E /* Sleep Lights */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "Sleep Lights";
 			sourceTree = "<group>";
 		};
@@ -113,7 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				649C9DABE91476615671F85F /* Pods_SleepLights.framework in Frameworks */,
-				417C39582F43502E0019858A /* DarkCoreFramework.xcframework in Frameworks */,
+				41C1DE6A2F44B8C9004E6EA1 /* DarkCoreFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +130,8 @@
 				41E41FB02EB1A83300D7C75E /* Products */,
 				F5409F65D7BE9BE767255646 /* Pods */,
 				5AEF647294C636672B82003A /* Frameworks */,
-				417C39562F43502C0019858A /* DarkCoreFramework.xcframework */,
 				417C39CC2F4353170019858A /* GoogleService-Info.plist */,
+				41C1DE682F44B8C3004E6EA1 /* DarkCoreFramework.xcframework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -303,12 +305,8 @@
 			);
 			inputFileListPaths = (
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
