@@ -11,6 +11,7 @@
 		417C39CD2F4353170019858A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417C39CC2F4353170019858A /* GoogleService-Info.plist */; };
 		41C1DE6A2F44B8C9004E6EA1 /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C1DE682F44B8C3004E6EA1 /* DarkCoreFramework.xcframework */; };
 		41C1DE6B2F44B8C9004E6EA1 /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C1DE682F44B8C3004E6EA1 /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41C1DF482F44BA9E004E6EA1 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C1DF472F44BA9D004E6EA1 /* UserNotifications.framework */; };
 		41C806072F4312D20032E3DC /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C806062F4312D20032E3DC /* FirebaseCore.framework */; };
 		41C8060B2F4312D90032E3DC /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C8060A2F4312D90032E3DC /* FirebaseMessaging.framework */; };
 		649C9DABE91476615671F85F /* Pods_SleepLights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4EFCB36CDFDE11CA0E125D /* Pods_SleepLights.framework */; };
@@ -61,6 +62,7 @@
 		414897F12F4311900057F92F /* notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		417C39CC2F4353170019858A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41C1DE682F44B8C3004E6EA1 /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
+		41C1DF472F44BA9D004E6EA1 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		41C806022F4312C50032E3DC /* FirebaseCoreInternal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreInternal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C806062F4312D20032E3DC /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C8060A2F4312D90032E3DC /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,8 +94,6 @@
 		};
 		41E41FB12EB1A83300D7C75E /* Sleep Lights */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "Sleep Lights";
 			sourceTree = "<group>";
 		};
@@ -104,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C1DF482F44BA9E004E6EA1 /* UserNotifications.framework in Frameworks */,
 				41C8060B2F4312D90032E3DC /* FirebaseMessaging.framework in Frameworks */,
 				41C806072F4312D20032E3DC /* FirebaseCore.framework in Frameworks */,
 				A1F6C8B050DE7F21D6E5B892 /* Pods_notifications.framework in Frameworks */,
@@ -147,6 +148,7 @@
 		5AEF647294C636672B82003A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41C1DF472F44BA9D004E6EA1 /* UserNotifications.framework */,
 				41C806152F4312FB0032E3DC /* FirebaseMessaging.framework */,
 				41C806112F4312F10032E3DC /* FirebaseCore.framework */,
 				41C8060D2F4312E50032E3DC /* AppsFlyerLib.xcframework */,
@@ -305,8 +307,12 @@
 			);
 			inputFileListPaths = (
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
