@@ -32,8 +32,11 @@ final class PresetStore: ObservableObject {
            let uuid = UUID(uuidString: data){
             activePresetID = uuid
             if !presets.contains(where: {$0.id == uuid}){
-                activePresetID = presets[0].id
+                activePresetID = presets.first?.id
             }
+        } else if !presets.isEmpty {
+            // On first launch, set the first preset as active by default
+            activePresetID = presets.first?.id
         }
         
         // auto-save
